@@ -61,7 +61,7 @@ extension=php_mbstring.dll
 - Generación de gráficas de reportes de clases y exámenes.
 - Modo claro/oscuro adaptable a preferencias del usuario.
 - Sistema de ayuda.
--  Conexión a la base de datos: El sistema establece una conexión centralizada a la base de datos MySQL a través del archivo conexion.php, ubicado en el directorio principal del proyecto. Este archivo contiene los parámetros necesarios para autenticar la conexión con el servidor y es reutilizado por todos los módulos del sistema.  Ver conexión.php (https://github.com/MichelIvette/WebEqipo11/blob/main/ESCUELA-DE-MANEJO/escuela_manejo/conexion.php)
+-  Conexión a la base de datos: El sistema establece una conexión centralizada a la base de datos MySQL a través del archivo conexion.php, ubicado en el directorio principal del proyecto. Este archivo contiene los parámetros necesarios para autenticar la conexión con el servidor y es reutilizado por todos los módulos del sistema.  Ver [conexión.php](https://github.com/MichelIvette/Lugia-/blob/main/P%C3%A1gina%20Web/escuela_manejo/conexion.php)
 
 ---
 
@@ -84,3 +84,4 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
