@@ -1,4 +1,4 @@
-<h1 align="center">WebEquipo11</h1>   
+<h1 align="center">LUGIA</h1>   
 
 **START & GO**: una escuela de manejo.
 
@@ -67,9 +67,9 @@ extension=php_mbstring.dll
 
 ## Autores
 
-- [@Monroy](https://github.com/ErickMonroy) 
+- 
 - [@Ivette](https://github.com/MichelIvette)  
-- [@Cesar](https://github.com/ZeroZX935) 
+- 
 
 ---
 
@@ -81,5 +81,6 @@ En desarrollo activo
 ---
 
 ## Licencia
+
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
