@@ -212,7 +212,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["eliminar"])) {
         <div class="modal-body">
           <div class="row g-3">
             <div class="col-md-4">
-              <label for="rfc" class="form-label">RFC (en mayúscualas)</label>
+              <label for="rfc" class="form-label">RFC (en mayúsculas)</label>
               <input type="text" class="form-control" name="rfc" required readonly>
             </div>
             <div class="col-md-4">
@@ -366,7 +366,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["eliminar"])) {
 
           <!-- Campos del formulario -->
           <div class="col-md-6">
-            <label class="form-label">RFC (en mayúscualas)</label>
+            <label class="form-label">RFC (en mayúsculas)</label>
             <input type="text" class="form-control" name="rfc" required
             pattern="^[A-ZÑ&]{4}\d{6}[A-Z0-9]{3}$"
             title="Debe contener 4 letras, 6 números (fecha) y 3 caracteres alfanuméricos (homoclave)">
