@@ -1,4 +1,4 @@
-<h1 align="center">WebEquipo11</h1>   
+<h1 align="center">Lugia</h1>   
 
 **START & GO**: una escuela de manejo.
 
@@ -40,12 +40,12 @@ extension=php_mbstring.dll
 
 - **empleados**: Información del personal operativo y administrativo.
 - **clientes**: Datos de personas inscritas para cursos.
-- **autos_asignados**: Vehículos disponibles para prácticas.
+- **usuarios**: Para nombres de usuarios y contraseñas.
 - **contratacion**: Los paquetes de clases que se ofertan.
 - **agenda**: Citas, horarios y clases programadas.
 
  **Diagrama E-R del sistema:**  
-[Ver Diagrama E-R](https://github.com/MichelIvette/WebEqipo11/blob/main/ESCUELA-DE-MANEJO/Documentaci%C3%B3n_t%C3%A9cnica/Diagrama%20E-R.png)
+[Ver Diagrama E-R]([https://github.com/MichelIvette/WebEqipo11/blob/main/ESCUELA-DE-MANEJO/Documentaci%C3%B3n_t%C3%A9cnica/Diagrama%20E-R.png](https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/BasesDeDatos/Diagrama%20E-R.jpg))
 
 ---
 
@@ -61,25 +61,27 @@ extension=php_mbstring.dll
 - Generación de gráficas de reportes de clases y exámenes.
 - Modo claro/oscuro adaptable a preferencias del usuario.
 - Sistema de ayuda.
--  Conexión a la base de datos: El sistema establece una conexión centralizada a la base de datos MySQL a través del archivo conexion.php, ubicado en el directorio principal del proyecto. Este archivo contiene los parámetros necesarios para autenticar la conexión con el servidor y es reutilizado por todos los módulos del sistema.  Ver conexión.php (https://github.com/MichelIvette/WebEqipo11/blob/main/ESCUELA-DE-MANEJO/escuela_manejo/conexion.php)
+-  Conexión a la base de datos: El sistema establece una conexión centralizada a la base de datos MySQL a través del archivo conexion.php, ubicado en el directorio principal del proyecto. Este archivo contiene los parámetros necesarios para autenticar la conexión con el servidor y es reutilizado por todos los módulos del sistema.  Ver conexión.php (https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/conexion.php)
 
 ---
 
 ## Autores
 
-- [@Monroy](https://github.com/ErickMonroy) 
-- [@Ivette](https://github.com/MichelIvette)  
-- [@Cesar](https://github.com/ZeroZX935) 
+- [@Ivette](https://github.com/MichelIvette)
+- [@Michelle](https://github.com/ItsMichh) 
+- [@Osva](https://github.com/Osvadeb)
+- [@José Carlos](https://github.com/)  
 
 ---
 
 ## Estado del proyecto
 
 En desarrollo activo  
-Última actualización: junio 2025  
+Última actualización: septiembre 2025  
 
 ---
 
 ## Licencia
+
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
