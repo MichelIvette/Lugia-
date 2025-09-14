@@ -131,7 +131,7 @@ require_once 'verificar_rol.php';
             </div>
             <div class="modal-body row g-3">
               <div class="col-md-6">
-                <label for="rfc_cliente" class="form-label">RFC</label>
+                <label for="rfc_cliente" class="form-label">RFC (en mayúscualas)</label>
                 <input type="text" class="form-control" name="rfc_cliente" id="rfc_cliente" required
                   pattern="^[A-ZÑ&]{3,4}\d{6}[A-Z0-9]{3}$"
                   title="Debe contener 4 letras, 6 números (fecha) y 3 caracteres alfanuméricos (homoclave)">
@@ -210,8 +210,7 @@ require_once 'verificar_rol.php';
                 </div>
                <div class="col-md-6">
                   <label class="form-label">Total Pago</label>
-                  <div class="input-group">
-                    
+                  <div class="input-group">   
                     <input type="number" class="form-control" name="total_pago" placeholder="Ej. 1500">
                   </div>
                 </div>
@@ -265,7 +264,7 @@ require_once 'verificar_rol.php';
               <input type="hidden" name="rfc_original">
 
               <div class="col-md-6">
-                <label class="form-label">RFC</label>
+                <label class="form-label">RFC (en mayúscualas)</label>
                 <input type="text" class="form-control" name="rfc_cliente" required pattern="^[A-ZÑ&]{3,4}\d{6}[A-Z0-9]{3}$"
                   title="Debe contener 4 letras, 6 números (fecha) y 3 caracteres alfanuméricos (homoclave)">
               </div>
