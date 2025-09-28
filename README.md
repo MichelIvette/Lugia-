@@ -10,11 +10,11 @@ Es una plataforma web diseñada para una escuela de manejo. Su objetivo es gesti
 ## Requisitos del Sistema
 
 **Software necesario:**
-- PHP 8.4.4
+- PHP del 7.4 hacia adelante
 - MySQL Workbench 8.0
 - Navegador moderno (Chrome, Firefox, Edge)
 - Servidor local (IIS sobre Windows recomendado)
-- Git + GitHub 
+- Git + GitHub
 
 **Configuraciones necesarias en `php.ini`:**
 ```ini
@@ -23,7 +23,14 @@ extension=php_mbstring.dll
 ```
 > Estas extensiones son necesarias para la generación de PDFs y el manejo correcto de caracteres especiales.
 
+```ini
+extension=mysqli
+extension=pdo_mysql
+```
+> Estas extensiones son necesarias para la compatibilidad con MySQL.
 ---
+**Material de apoyo
+https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 
 ## Tecnologías Utilizadas  
 
@@ -35,6 +42,14 @@ extension=php_mbstring.dll
 - IIS (Internet Information Services): Servidor web sobre Windows.
 
 ---
+## Para ingresar al contenido de la plataforma
+
+Está plataforma va dirigido a dos usuarios finales: 
+Administrador 
+User: admin pass: admin
+Recepcionista 
+User: recepcionista pass: recepcionista 
+
 
 ## Tablas de la Base de Datos
 
@@ -87,5 +102,6 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
