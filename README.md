@@ -29,7 +29,7 @@ extension=pdo_mysql
 ```
 > Estas extensiones son necesarias para la compatibilidad con MySQL.
 ---
-**Material de apoyo
+**Material de apoyo**
 https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 
 ## Tecnologías Utilizadas  
@@ -45,9 +45,11 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 ## Para ingresar al contenido de la plataforma
 
 Está plataforma va dirigido a dos usuarios finales: 
-Administrador 
+- Administrador
+---
 User: admin pass: admin
-Recepcionista 
+- Recepcionista
+---
 User: recepcionista pass: recepcionista 
 
 
@@ -102,6 +104,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
