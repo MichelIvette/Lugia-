@@ -45,7 +45,7 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 ## Para ingresar al contenido de la plataforma
 
 Está plataforma va dirigido a dos usuarios finales: 
----
+
 Administrador
 - User: admin pass: admin
 ---
@@ -104,6 +104,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
