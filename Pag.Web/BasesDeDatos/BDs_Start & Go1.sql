@@ -181,6 +181,34 @@ VALUES
 ('SALM860927MDF', '2025-06-13', '16:00:00', 'RAFM990909HDF', '2025-09-12', 'LECCIÓN', 20, 'Buen ritmo', NULL, NULL, NULL),
 ('VELM870610HDF', '2025-06-11', '11:00:00', 'OSCJ010202HDF', '2025-09-25', 'LECCIÓN', 5, 'Buen avance', NULL, NULL, NULL);
 
+INSERT INTO AGENDA 
+(RFC_EMP, FECHA, HORA, RFC_CLIENTE, FECHA_PAGO, ACTIVIDAD, KM_RECORRIDOS, NOTAS, EXAM_TEO, EXAM_PRAC, NOTAS_RESULTADO) 
+VALUES
+-- Semana 1
+('VELM870610HDF', '2025-09-02', '08:00:00', 'JUAP910101HDF', '2025-08-05', 'LECCIÓN', 12, 'Avance en estacionado', NULL, NULL, NULL),
+('REYG940420HDF', '2025-09-03', '09:00:00', 'MARG920202MDF', '2025-08-10', 'LECCIÓN', 14, 'Practicar arranques en pendiente', NULL, NULL, NULL),
+('SALM860927MDF', '2025-09-04', '10:00:00', 'LUIC930303HDF', '2025-08-15', 'EXAMEN', 18, 'Manejó con nerviosismo', 75, 82, 'Aprobado'),
+('LOZR970708HDF', '2025-09-05', '11:00:00', 'CARF950505HDF', '2025-08-20', 'LECCIÓN', 9, 'Mejoró en giros cerrados', NULL, NULL, NULL),
+
+-- Semana 2
+('VELM870610HDF', '2025-09-09', '08:00:00', 'ANEL960606MDF', '2025-08-25', 'LECCIÓN', 15, 'Confianza al incorporarse a avenidas', NULL, NULL, NULL),
+('REYG940420HDF', '2025-09-10', '09:00:00', 'JORR970707HDF', '2025-09-03', 'LECCIÓN', 20, 'Buen control en avenidas rápidas', NULL, NULL, NULL),
+('SALM860927MDF', '2025-09-11', '15:00:00', 'LUIM980808MDF', '2025-09-08', 'LECCIÓN', 11, 'Dificultad con retroceso', NULL, NULL, NULL),
+('LOZR970708HDF', '2025-09-12', '16:00:00', 'RAFM990909HDF', '2025-09-12', 'EXAMEN', 22, 'Buen desempeño general', 85, 90, 'Aprobado'),
+
+-- Semana 3
+('VELM870610HDF', '2025-09-16', '08:00:00', 'VERC000101MDF', '2025-09-18', 'LECCIÓN', 10, 'Atenta en cruceros, falta práctica', NULL, NULL, NULL),
+('REYG940420HDF', '2025-09-17', '09:00:00', 'OSCJ010202HDF', '2025-09-25', 'LECCIÓN', 7, 'Buen avance, controlar frenados', NULL, NULL, NULL),
+('SALM860927MDF', '2025-09-18', '15:00:00', 'JUAP910101HDF', '2025-08-05', 'EXAMEN', 19, 'Más seguro en avenidas', 90, 92, 'Aprobado'),
+('LOZR970708HDF', '2025-09-19', '11:00:00', 'MARG920202MDF', '2025-08-10', 'LECCIÓN', 8, 'Necesita más práctica de estacionado', NULL, NULL, NULL),
+
+-- Semana 4
+('VELM870610HDF', '2025-09-23', '08:00:00', 'LUIC930303HDF', '2025-08-15', 'LECCIÓN', 17, 'Mejor manejo de cloche', NULL, NULL, NULL),
+('REYG940420HDF', '2025-09-24', '09:00:00', 'CARF950505HDF', '2025-08-20', 'EXAMEN', 15, 'Buen control general', 88, 85, 'Aprobado'),
+('SALM860927MDF', '2025-09-25', '15:00:00', 'ANEL960606MDF', '2025-08-25', 'LECCIÓN', 13, 'Le cuesta trabajo manejar bajo lluvia', NULL, NULL, NULL),
+('LOZR970708HDF', '2025-09-26', '16:00:00', 'JORR970707HDF', '2025-09-03', 'LECCIÓN', 18, 'Muestra confianza en carretera', NULL, NULL, NULL);
+
+
 
 SELECT * FROM CLIENTES;
 SELECT * FROM usuario;
