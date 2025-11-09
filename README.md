@@ -56,8 +56,8 @@ Recepcionista
 ## Tablas de la Base de Datos
 
 - **empleados**: Información del personal operativo y administrativo.
-- **clientes**: Datos de personas inscritas para cursos.
-- **pagos**: Pagos de personas inscritas para cursos.
+- **clientes**: Datos personales de personas inscritas para cursos.
+- **pagos**: Pagos realizados de personas inscritas para cursos.
 - **usuarios**: Para nombres de usuarios y contraseñas.
 - **contratacion**: Los paquetes de clases que se ofertan.
 - **agenda**: Citas, horarios y clases programadas.
@@ -105,6 +105,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
