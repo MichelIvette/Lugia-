@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if (!isset($_SESSION["activa"])) {
@@ -65,7 +66,6 @@ require_once 'verificar_rol.php';
                 <tr>
                   <th></th>
                   <th>RFC</th>
-                  <th>Tipo Contratación</th>
                   <th>Nombre</th>
                   <th>Apellido Paterno</th>
                   <th>Apellido Materno</th>
@@ -76,10 +76,6 @@ require_once 'verificar_rol.php';
                   <th>Alcaldía</th>
                   <th>Permiso</th>
                   <th>Observaciones</th>
-                  <th>Fecha de pago</th>
-                  <th>Total Pago</th>
-                  <th>Forma de Pago</th>
-                  <th>Reembolso</th>
                   <th>Correo</th>       
                 </tr>
               </thead>
@@ -91,7 +87,6 @@ require_once 'verificar_rol.php';
                         echo "<tr>";
                         echo "<td><input type='checkbox' name='seleccionados[]' value='".htmlspecialchars($row['RFC_CLIENTE'])."' class='fila-checkbox'></td>";
                         echo "<td>".htmlspecialchars($row['RFC_CLIENTE'])."</td>";
-                        echo "<td>".htmlspecialchars($row['TIPO_CONTRATACION'] ?? '')."</td>";
                         echo "<td>".htmlspecialchars($row['NOMB_CLI'] ?? '')."</td>";
                         echo "<td>".htmlspecialchars($row['AP_CLI'] ?? '')."</td>";
                         echo "<td>".htmlspecialchars($row['AM_CLI'] ?? '')."</td>";
@@ -102,10 +97,6 @@ require_once 'verificar_rol.php';
                         echo "<td>".htmlspecialchars($row['ALCALDIA'] ?? '')."</td>";
                         echo "<td>".htmlspecialchars($row['PERMISO'] ?? '')."</td>";
                         echo "<td>".htmlspecialchars($row['OBSERVACIONES'] ?? '')."</td>";
-                        echo "<td>".htmlspecialchars($row['FECHA_PAGO'] ?? '')."</td>";
-                        echo "<td>".htmlspecialchars($row['TOTAL_PAGO'] ?? '')."</td>";
-                        echo "<td>".htmlspecialchars($row['FORMA_PAGO'] ?? '')."</td>";
-                        echo "<td>".htmlspecialchars($row['REEMBOLSO'] ?? '')."</td>";
                         echo "<td>".htmlspecialchars($row['CORREO'] ?? '')."</td>";                     
                         echo "</tr>";
                     }
@@ -124,42 +115,41 @@ require_once 'verificar_rol.php';
     <div class="modal fade" id="modalAgregarAlumno" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
+
           <form method="POST" action="agregar_alumno.php">
+
             <div class="modal-header bg-warning">
               <h5 class="modal-title">Agregar Alumno</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <div class="modal-body row g-3">
+
               <div class="col-md-6">
                 <label for="rfc_cliente" class="form-label">RFC (en mayúsculas)</label>
                 <input type="text" class="form-control" name="rfc_cliente" id="rfc_cliente" required
                   pattern="^[A-ZÑ&]{3,4}\d{6}[A-Z0-9]{3}$"
                   title="Debe contener 4 letras, 6 números (fecha) y 3 caracteres alfanuméricos (homoclave)">
               </div>
-              <div class="col-md-6">
-                <label class="form-label">Tipo de Contratación</label>
-                <select class="form-select" name="tipo_contratacion" required>
-                  <option value=""disabled selected></option>
-                  <option value="BÁSICO">BÁSICO</option>
-                  <option value="INTERMEDIO">INTERMEDIO</option>
-                  <option value="PREMIUM">PREMIUM</option>
-                </select>
-              </div>
+              
               <div class="col-md-4">
                 <label class="form-label">Nombre</label>
                 <input type="text" class="form-control" name="nomb_cli" required pattern="^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]{2,}$"
                 title="Solo letras y espacios (mínimo 2 caracteres)">
               </div>
+
               <div class="col-md-4">
                 <label class="form-label">Apellido Paterno</label>
                 <input type="text" class="form-control" name="ap_cli" required pattern="^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]{2,}$"
                 title="Solo letras y espacios (mínimo 2 caracteres)">
               </div>
+
               <div class="col-md-4">
                 <label class="form-label">Apellido Materno</label>
                 <input type="text" class="form-control" name="am_cli" required pattern="^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]{2,}$"
                 title="Solo letras y espacios (mínimo 2 caracteres)">
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Fecha de Nacimiento</label>
                 <input type="date" class="form-control" name="fecha_nac" value="<?= htmlspecialchars($_POST['fecha_nac'] ?? '') ?>" 
@@ -169,6 +159,7 @@ require_once 'verificar_rol.php';
                   oninvalid="this.setCustomValidity('Verifique, la fecha introducida no es correcta')"
                   oninput="this.setCustomValidity('')">
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Permiso</label>
                 <select class="form-select" name="permiso" required>
@@ -178,71 +169,33 @@ require_once 'verificar_rol.php';
                   <option value="No">En tramite</option>
                 </select>
               </div>
+
               <div class="col-12 mb-2">
               <hr> <!-- opcional, para una línea separadora -->
               <strong>Dirección</strong>
             </div>
+
               <div class="col-md-6">
                 <label class="form-label">Calle</label>
                 <input type="text" class="form-control" name="calle" required>
               </div>
+
               <div class="col-md-3">
                 <label class="form-label">Número</label>
                 <input type="text" class="form-control" name="numero" required>
               </div>
+
               <div class="col-md-3">
                 <label class="form-label">Colonia</label>
                 <input type="text" class="form-control" name="colonia" required>
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Alcaldía</label>
                 <input type="text" class="form-control" name="alcaldia" required>
               </div>
               <hr> <!-- opcional, para una línea separadora -->
 
-                    
-            <div class="row">
-                <div class="col-md-6">
-                  <label class="form-label" >Fecha de Pago</label>
-                  <input type="date" class="form-control" name="fecha_pago" value="<?= htmlspecialchars($_POST['fecha_pago'] ?? '') ?>" 
-                  min="1900-01-01"                     
-                  max="<?= date('Y-m-d') ?>"             
-                  required
-                  oninvalid="this.setCustomValidity('Verifique, la fecha introducida no es correcta')"
-                  oninput="this.setCustomValidity('')">
-                </div>
-               
-                      
-           
-                <div class="col-md-6">
-                <label class="form-label">Total Pago</label>
-                <select class="form-select" name="total_pago" required>
-                  <option value="" disabled selected></option>
-                  <option value="2000">2000</option>
-                  <option value="3500">3500</option>
-                  <option value="5000">5000</option>
-                </select>
-              </div>
-               
-        
-              <div class="col-md-6">
-                <label class="form-label">Forma de Pago</label>
-                <select class="form-select" name="forma_pago" required>
-                  <option value=""disabled selected></option>
-                  <option value="EFECTIVO">EFECTIVO</option>
-                  <option value="TRANSFERENCIA">TRANSFERENCIA</option>
-                  <option value="DEBITO">DEBITO</option>
-                  <option value="CREDITO">CREDITO</option>                
-                </select>
-              </div>
-              
-              <div class="col-md-6">
-                <label class="form-label">Reembolso (1=Si y 0=No)</label>
-                <div class="input-group">
-                  
-                  <input type="number" class="form-control" name="reembolso" step="1" min="0" required>
-                </div>
-              </div>
               <div class="col-md-6">
                 <label class="form-label">Correo</label>
                 <input type="text" class="form-control" name="correo">
@@ -252,115 +205,118 @@ require_once 'verificar_rol.php';
                 <label class="form-label">Observaciones</label>
                 <textarea class="form-control" name="observaciones" rows="2"></textarea>
               </div>
+
             </div>
-            </div>
+           
 
             <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cancelar</button>
               <button type="submit" class="btn btn-tertiary">Guardar</button>
             </div>
+            
           </form>
         </div>
       </div>
     </div>
 
     <!-- Modal Modificar Alumno -->
-    <div class="modal fade" id="modalModificarAlumno" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <form method="POST" action="modificar_alumno.php">
-            <div class="modal-header bg-warning">
-              <h5 class="modal-title">Modificar Alumno</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body row g-3">
-              <input type="hidden" name="rfc_original">
+<div class="modal fade" id="modalModificarAlumno" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <form method="POST" action="modificar_alumno.php">
+        <div class="modal-header bg-warning">
+          <h5 class="modal-title">Modificar Alumno</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
 
-              <div class="col-md-6">
-                <label class="form-label">RFC (en mayúsculas)</label>
-                <input type="text" class="form-control" name="rfc_cliente" required pattern="^[A-ZÑ&]{3,4}\d{6}[A-Z0-9]{3}$"
-                  title="Debe contener 4 letras, 6 números (fecha) y 3 caracteres alfanuméricos (homoclave)">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Tipo de Contratación</label>
-                <input type="text" class="form-control" name="tipo_contratacion" required>
-                
-              </div>
-              <div class="col-md-4">
-                <label class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="nomb_cli" required>
-              </div>
-              <div class="col-md-4">
-                <label class="form-label">Apellido Paterno</label>
-                <input type="text" class="form-control" name="ap_cli" required>
-              </div>
-              <div class="col-md-4">
-                <label class="form-label">Apellido Materno</label>
-                <input type="text" class="form-control" name="am_cli">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Fecha de Nacimiento</label>
-                <input type="date" class="form-control" name="fecha_nac" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Permiso</label>
-                <input type="text" class="form-control" name="permiso">
-              </div>
-              <div class="col-12 mb-2">
-              <hr> <!-- opcional, para una línea separadora -->
+        <div class="modal-body">
+          <div class="row g-3">
+
+            <input type="hidden" name="rfc_original">
+
+            <div class="col-md-6">
+              <label class="form-label">RFC (en mayúsculas)</label>
+              <input type="text" class="form-control" name="rfc_cliente" required 
+                pattern="^[A-ZÑ&]{3,4}\d{6}[A-Z0-9]{3}$"
+                title="Debe contener 4 letras, 6 números (fecha) y 3 caracteres alfanuméricos (homoclave)">
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" name="nomb_cli" required>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Apellido Paterno</label>
+              <input type="text" class="form-control" name="ap_cli" required>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Apellido Materno</label>
+              <input type="text" class="form-control" name="am_cli">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Fecha de Nacimiento</label>
+              <input type="date" class="form-control" name="fecha_nac" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Permiso</label>
+              <input type="text" class="form-control" name="permiso">
+            </div>
+
+            <div class="col-12 mt-3">
+              <hr>
               <strong>Dirección</strong>
             </div>
-              <div class="col-md-6">
-                <label class="form-label">Calle</label>
-                <input type="text" class="form-control" name="calle" required>
-              </div>
-              <div class="col-md-3">
-                <label class="form-label">Número</label>
-                <input type="text" class="form-control" name="numero" required>
-              </div>
-              <div class="col-md-3">
-                <label class="form-label">Colonia</label>
-                <input type="text" class="form-control" name="colonia" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Alcaldía</label>
-                <input type="text" class="form-control" name="alcaldia" required>
-              </div>
-              <hr> <!-- opcional, para una línea separadora -->
-                <div class="col-md-6">
-                  <label class="form-label">Fecha de Pago</label>
-                  <input type="date" class="form-control" name="fecha_pago" required>
-                </div>
-              <div class="col-md-6">
-                <label class="form-label">Total Pago</label>
-                <input type="number" class="form-control" name="total_pago" required >
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Forma de Pago</label>
-                <input type="text" class="form-control" name="forma_pago" required>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Reembolso</label>
-                <input type="number" class="form-control" name="reembolso" step="1" min="0">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Correo</label>
-                <input type="text" class="form-control" name="correo">
-              </div>
-              
-              <div class="col-12">
-                <label class="form-label">Observaciones</label>
-                <textarea class="form-control" name="observaciones" rows="2"></textarea>
-              </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Calle</label>
+              <input type="text" class="form-control" name="calle" required>
             </div>
-            <div class="modal-footer">
+
+            <div class="col-md-3">
+              <label class="form-label">Número</label>
+              <input type="text" class="form-control" name="numero" required>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Colonia</label>
+              <input type="text" class="form-control" name="colonia" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Alcaldía</label>
+              <input type="text" class="form-control" name="alcaldia" required>
+            </div>
+
+            <div class="col-12 mt-3">
+              <hr>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Correo</label>
+              <input type="email" class="form-control" name="correo">
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Observaciones</label>
+              <textarea class="form-control" name="observaciones" rows="2"></textarea>
+            </div>
+
+          </div> <!-- row -->
+        </div> <!-- modal-body -->
+
+         <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cancelar</button>
               <button type="submit" class="btn btn-tertiary">Guardar Cambios</button>
             </div>
-          </form>
-        </div>
-      </div>
+      </form>
     </div>
+  </div>
+</div>
+
 <!-- Modal Confirmar Eliminación Alumnos con estilo igual al modal de empleados -->
 <div class="modal fade" id="modalConfirmarEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -436,22 +392,17 @@ require_once 'verificar_rol.php';
           // Llenar formulario de modificación
           const modal = document.getElementById('modalModificarAlumno');
           modal.querySelector('input[name="rfc_cliente"]').value = celdas[1].textContent;
-          modal.querySelector('input[name="tipo_contratacion"]').value = celdas[2].textContent;
-          modal.querySelector('input[name="nomb_cli"]').value = celdas[3].textContent;
-          modal.querySelector('input[name="ap_cli"]').value = celdas[4].textContent;
-          modal.querySelector('input[name="am_cli"]').value = celdas[5].textContent;
-          modal.querySelector('input[name="fecha_nac"]').value = celdas[6].textContent;
-          modal.querySelector('input[name="calle"]').value = celdas[7].textContent;
-          modal.querySelector('input[name="numero"]').value = celdas[8].textContent;
-          modal.querySelector('input[name="colonia"]').value = celdas[9].textContent;
-          modal.querySelector('input[name="alcaldia"]').value = celdas[10].textContent;
-          modal.querySelector('input[name="permiso"]').value = celdas[11].textContent;
-          modal.querySelector('textarea[name="observaciones"]').value = celdas[12].textContent;
-          modal.querySelector('input[name="fecha_pago"]').value = celdas[13].textContent;
-          modal.querySelector('input[name="total_pago"]').value = celdas[14].textContent;
-          modal.querySelector('input[name="forma_pago"]').value = celdas[15].textContent;
-          modal.querySelector('input[name="reembolso"]').value = celdas[16].textContent;
-          modal.querySelector('input[name="correo"]').value = celdas[17].textContent;
+          modal.querySelector('input[name="nomb_cli"]').value = celdas[2].textContent;
+          modal.querySelector('input[name="ap_cli"]').value = celdas[3].textContent;
+          modal.querySelector('input[name="am_cli"]').value = celdas[4].textContent;
+          modal.querySelector('input[name="fecha_nac"]').value = celdas[5].textContent;
+          modal.querySelector('input[name="calle"]').value = celdas[6].textContent;
+          modal.querySelector('input[name="numero"]').value = celdas[7].textContent;
+          modal.querySelector('input[name="colonia"]').value = celdas[8].textContent;
+          modal.querySelector('input[name="alcaldia"]').value = celdas[9].textContent;
+          modal.querySelector('input[name="permiso"]').value = celdas[10].textContent;
+          modal.querySelector('textarea[name="observaciones"]').value = celdas[11].textContent;
+          modal.querySelector('input[name="correo"]').value = celdas[12].textContent;
           
           
           // Campo oculto para RFC original

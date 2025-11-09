@@ -39,7 +39,10 @@ require_once 'verificar_rol.php';
     <li class="menu_subrayado <?= ($paginaActual == 'alumnos.php') ? 'active' : '' ?>">
         <a href="alumnos.php"><i class="fas fa-users"></i> Alumnos</a>
     </li>
-    
+
+     <li class="menu_subrayado <?= ($paginaActual == 'pagos.php') ? 'active' : '' ?>">
+        <a href="pagos.php"><i class="fas fa-money-bill-wave"></i> Pagos</a>
+    </li>
     
     <li class="menu_subrayado <?= ($paginaActual == 'agenda.php') ? 'active' : '' ?>">
         <a href="agenda.php"><i class="fas fa-calendar-alt"></i> Agenda</a>

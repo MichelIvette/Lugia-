@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         $sql = "UPDATE CLIENTES SET
             RFC_CLIENTE = :rfc,
-            TIPO_CONTRATACION = :tipo_contratacion,
             NOMB_CLI = :nombre,
             AP_CLI = :apellido_paterno,
             AM_CLI = :apellido_materno,
@@ -26,18 +25,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ALCALDIA = :alcaldia,
             PERMISO = :permiso,
             OBSERVACIONES = :observaciones,
-            TOTAL_PAGO = :total_pago,
-            FORMA_PAGO = :forma_pago,
-            REEMBOLSO = :reembolso,
-            CORREO = :correo,
-            FECHA_PAGO = :fecha_pago
+            CORREO = :correo
         WHERE RFC_CLIENTE = :rfc_original";
 
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             ':rfc' => $_POST['rfc_cliente'],
-            ':tipo_contratacion' => $_POST['tipo_contratacion'],
             ':nombre' => $_POST['nomb_cli'],
             ':apellido_paterno' => $_POST['ap_cli'],
             ':apellido_materno' => $_POST['am_cli'] ?? null,
@@ -48,10 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ':alcaldia' => $_POST['alcaldia'],
             ':permiso' => $_POST['permiso'] ?? null,
             ':observaciones' => $_POST['observaciones'] ?? null,
-            ':fecha_pago' => $_POST['fecha_pago'] ?? null,
-            ':total_pago' => $_POST['total_pago'] ?? 0,
-            ':forma_pago' => $_POST['forma_pago'] ?? null,
-            ':reembolso' => $_POST['reembolso'] ?? 0,
             ':correo' => $_POST['correo'] ?? null,
             ':rfc_original' => $_POST['rfc_original']
         ]);

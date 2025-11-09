@@ -26,6 +26,9 @@ if ($rol === 'recepcionista') {
         'modificar_alumno.php',
         'eliminar_alumno.php',
         'agregar_alumno.php',
+        'pagos.php',
+        'pago_agregar.php',
+        'pago_modificar.php',
         'sistema_ayuda.php'
     ];
 }

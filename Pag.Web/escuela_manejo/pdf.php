@@ -15,10 +15,19 @@ $mesFormateado = strftime("%B de %Y", strtotime($inicioMes));
 $mesFormateado = ucfirst($mesFormateado); // Primera letra en mayúscula
 
 // CONSULTA FILTRADA POR MES
-$sql = "SELECT RFC_CLIENTE, NOMB_CLI, AP_CLI, AM_CLI, FECHA_PAGO, TOTAL_PAGO, FORMA_PAGO, REEMBOLSO 
-        FROM CLIENTES 
-        WHERE FECHA_PAGO BETWEEN :inicio AND :fin
-        ORDER BY FECHA_PAGO ASC";
+$sql = "SELECT 
+            C.RFC_CLIENTE,
+            C.NOMB_CLI,
+            C.AP_CLI,
+            C.AM_CLI,
+            P.FECHA_PAGO,
+            P.TOTAL_PAGO,
+            P.FORMA_PAGO,
+            P.REEMBOLSO
+        FROM PAGOS P
+        INNER JOIN CLIENTES C ON P.RFC_CLIENTE = C.RFC_CLIENTE
+        WHERE P.FECHA_PAGO BETWEEN :inicio AND :fin
+        ORDER BY P.FECHA_PAGO ASC";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute(['inicio' => $inicioMes, 'fin' => $finMes]);

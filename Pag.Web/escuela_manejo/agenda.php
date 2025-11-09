@@ -38,11 +38,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["eliminar"])) {
   <title>Agenda</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" href="img/icono.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
   <link rel="stylesheet" href="css/site.css">
 </head>
+
 <body>
   <div class="wrapper">
     <?php include 'menu.php'; ?>
@@ -129,61 +128,78 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["eliminar"])) {
     <div class="modal fade" id="modalAgregarAgenda" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
+         
           <form method="POST" action="agregar_agenda.php">
-            <div class="modal-header bg-warning">
+            
+          <div class="modal-header bg-warning">
               <h5 class="modal-title">Agregar Registro</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <div class="modal-body row g-3">
+              
               <div class="col-md-6">
                 <label class="form-label">RFC Empleado</label>
                 <input type="text" class="form-control" name="rfc_emp" required maxlength="13">
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Fecha</label>
                 <input type="date" class="form-control" name="fecha" required>
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Hora</label>
                 <input type="time" class="form-control" name="hora" required>
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">RFC Cliente</label>
                 <input type="text" class="form-control" name="rfc_cliente" maxlength="13">
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Fecha de pago</label>
                 <input type="date" class="form-control" name="fecha_pago" required>
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Actividad</label>
                 <input type="text" class="form-control" name="actividad">
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">KM Recorridos</label>
                 <input type="number" class="form-control" name="km_recorridos" min="0">
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Ex. Teórico (0-100)</label>
                 <input type="number" class="form-control" name="exam_teo" min="0" max="100">
               </div>
+
               <div class="col-md-6">
                 <label class="form-label">Ex. Práctico (0-100)</label>
                 <input type="number" class="form-control" name="exam_prac" min="0" max="100">
               </div>
+
               <div class="col-12">
                 <label class="form-label">Notas</label>
                 <textarea class="form-control" name="notas" rows="2" maxlength="50"></textarea>
               </div>
+
               <div class="col-12">
                 <label class="form-label">Notas Resultado</label>
                 <textarea class="form-control" name="notas_resultado" rows="2" maxlength="50"></textarea>
               </div>
+
             </div>
+
             <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cancelar</button>
               <button type="submit" class="btn btn-tertiary">Guardar</button>
             </div>
+
           </form>
         </div>
       </div>

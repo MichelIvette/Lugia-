@@ -11,21 +11,18 @@ require_once 'verificar_rol.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         $sql = "INSERT INTO CLIENTES (
-            RFC_CLIENTE, TIPO_CONTRATACION, NOMB_CLI, AP_CLI, AM_CLI, 
+            RFC_CLIENTE,  NOMB_CLI, AP_CLI, AM_CLI, 
             FECHA_NAC, CALLE, NUMERO, COLONIA, ALCALDIA, 
-            PERMISO, OBSERVACIONES, TOTAL_PAGO, FORMA_PAGO, 
-            REEMBOLSO, CORREO, FECHA_PAGO
+            PERMISO, OBSERVACIONES, CORREO
         ) VALUES (
-            :rfc, :tipo_contratacion, :nombre, :apellido_paterno, :apellido_materno,
+            :rfc, :nombre, :apellido_paterno, :apellido_materno,
             :fecha_nac, :calle, :numero, :colonia, :alcaldia,
-            :permiso, :observaciones, :total_pago, :forma_pago,
-            :reembolso, :correo, :fecha_pago
+            :permiso, :observaciones,  :correo
         )";
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             ':rfc' => $_POST['rfc_cliente'],
-            ':tipo_contratacion' => $_POST['tipo_contratacion'],
             ':nombre' => $_POST['nomb_cli'],
             ':apellido_paterno' => $_POST['ap_cli'],
             ':apellido_materno' => $_POST['am_cli'] ?? null,
@@ -36,11 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ':alcaldia' => $_POST['alcaldia'],
             ':permiso' => $_POST['permiso'] ?? null,
             ':observaciones' => $_POST['observaciones'] ?? null,
-            ':total_pago' => $_POST['total_pago'] ?? 0,
-            ':forma_pago' => $_POST['forma_pago'] ?? null,
-            ':reembolso' => $_POST['reembolso'] ?? 0,
             ':correo' => $_POST['correo'] ?? null,
-            ':fecha_pago' => $_POST['fecha_pago'] ?? null
         ]);
 
         $_SESSION['mensaje'] = "
