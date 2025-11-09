@@ -2,7 +2,7 @@
 // conexion.php
 
 $host = "localhost";
-$dbname = "escuela1";
+$dbname = "escuela";
 $user = "root";
 $pass = "12345";
 

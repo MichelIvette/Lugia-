@@ -16,16 +16,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     TIPO_CONTRATACION, 
                     TOTAL_PAGO, 
                     FORMA_PAGO, 
-                    REEMBOLSO, 
-                    RFC_EMP
+                    REEMBOLSO                  
                 ) VALUES (
                     :rfc_cliente, 
                     :fecha_pago, 
                     :tipo_contratacion, 
                     :total_pago, 
                     :forma_pago, 
-                    :reembolso, 
-                    :rfc_empleado
+                    :reembolso
                 )";
 
         $stmt = $pdo->prepare($sql);
@@ -35,8 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ':tipo_contratacion' => $_POST['tipo_contratacion'],
             ':total_pago'        => $_POST['total_pago'],
             ':forma_pago'        => $_POST['forma_pago'],
-            ':reembolso'         => $_POST['reembolso'],
-            ':rfc_empleado'      => strtoupper(trim($_POST['rfc_empleado']))
+            ':reembolso'         => $_POST['reembolso']
         ]);
 
         $_SESSION['mensaje'] = "
