@@ -14,12 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             RFC_CLIENTE, TIPO_CONTRATACION, NOMB_CLI, AP_CLI, AM_CLI, 
             FECHA_NAC, CALLE, NUMERO, COLONIA, ALCALDIA, 
             PERMISO, OBSERVACIONES, TOTAL_PAGO, FORMA_PAGO, 
-            REEMBOLSO, USUARIO, DOMINIO, FECHA_PAGO
+            REEMBOLSO, CORREO, FECHA_PAGO
         ) VALUES (
             :rfc, :tipo_contratacion, :nombre, :apellido_paterno, :apellido_materno,
             :fecha_nac, :calle, :numero, :colonia, :alcaldia,
             :permiso, :observaciones, :total_pago, :forma_pago,
-            :reembolso, :usuario, :dominio, :fecha_pago
+            :reembolso, :correo, :fecha_pago
         )";
 
         $stmt = $pdo->prepare($sql);
@@ -39,8 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ':total_pago' => $_POST['total_pago'] ?? 0,
             ':forma_pago' => $_POST['forma_pago'] ?? null,
             ':reembolso' => $_POST['reembolso'] ?? 0,
-            ':usuario' => $_POST['usuario'] ?? null,
-            ':dominio' => $_POST['dominio'] ?? null,
+            ':correo' => $_POST['correo'] ?? null,
             ':fecha_pago' => $_POST['fecha_pago'] ?? null
         ]);
 

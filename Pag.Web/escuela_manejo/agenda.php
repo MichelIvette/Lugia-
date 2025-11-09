@@ -165,11 +165,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["eliminar"])) {
               </div>
               <div class="col-md-6">
                 <label class="form-label">Ex. Teórico (0-100)</label>
-                <input type="number" class="form-control" name="exam_teo" min="0" max="100" required>
+                <input type="number" class="form-control" name="exam_teo" min="0" max="100">
               </div>
               <div class="col-md-6">
                 <label class="form-label">Ex. Práctico (0-100)</label>
-                <input type="number" class="form-control" name="exam_prac" min="0" max="100" required>
+                <input type="number" class="form-control" name="exam_prac" min="0" max="100">
               </div>
               <div class="col-12">
                 <label class="form-label">Notas</label>
@@ -233,11 +233,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["eliminar"])) {
               </div>
               <div class="col-md-6">
                 <label class="form-label">Ex. Teórico (0-100)</label>
-                <input type="number" class="form-control" name="exam_teo" min="0" max="100" required>
+                <input type="number" class="form-control" name="exam_teo" min="0" max="100" >
               </div>
               <div class="col-md-6">
                 <label class="form-label">Ex. Práctico (0-100)</label>
-                <input type="number" class="form-control" name="exam_prac" min="0" max="100" required>
+                <input type="number" class="form-control" name="exam_prac" min="0" max="100" >
               </div>
               <div class="col-12">
                 <label class="form-label">Notas</label>
@@ -375,3 +375,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["eliminar"])) {
   </script>
 </body>
 </html>
+

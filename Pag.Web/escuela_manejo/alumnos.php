@@ -199,6 +199,9 @@ require_once 'verificar_rol.php';
                 <input type="text" class="form-control" name="alcaldia" required>
               </div>
               <hr> <!-- opcional, para una línea separadora -->
+
+                    
+            <div class="row">
                 <div class="col-md-6">
                   <label class="form-label" >Fecha de Pago</label>
                   <input type="date" class="form-control" name="fecha_pago" value="<?= htmlspecialchars($_POST['fecha_pago'] ?? '') ?>" 
@@ -208,12 +211,20 @@ require_once 'verificar_rol.php';
                   oninvalid="this.setCustomValidity('Verifique, la fecha introducida no es correcta')"
                   oninput="this.setCustomValidity('')">
                 </div>
-               <div class="col-md-6">
-                  <label class="form-label">Total Pago</label>
-                  <div class="input-group">   
-                    <input type="number" class="form-control" name="total_pago" placeholder="Ej. 1500">
-                  </div>
-                </div>
+               
+                      
+           
+                <div class="col-md-6">
+                <label class="form-label">Total Pago</label>
+                <select class="form-select" name="total_pago" required>
+                  <option value="" disabled selected></option>
+                  <option value="2000">2000</option>
+                  <option value="3500">3500</option>
+                  <option value="5000">5000</option>
+                </select>
+              </div>
+               
+        
               <div class="col-md-6">
                 <label class="form-label">Forma de Pago</label>
                 <select class="form-select" name="forma_pago" required>
@@ -221,10 +232,10 @@ require_once 'verificar_rol.php';
                   <option value="EFECTIVO">EFECTIVO</option>
                   <option value="TRANSFERENCIA">TRANSFERENCIA</option>
                   <option value="DEBITO">DEBITO</option>
-                  <option value="CREDITO">CREDITO</option>
-                  
+                  <option value="CREDITO">CREDITO</option>                
                 </select>
               </div>
+              
               <div class="col-md-6">
                 <label class="form-label">Reembolso (1=Si y 0=No)</label>
                 <div class="input-group">
@@ -242,6 +253,8 @@ require_once 'verificar_rol.php';
                 <textarea class="form-control" name="observaciones" rows="2"></textarea>
               </div>
             </div>
+            </div>
+
             <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cancelar</button>
               <button type="submit" class="btn btn-tertiary">Guardar</button>
@@ -316,15 +329,15 @@ require_once 'verificar_rol.php';
               <hr> <!-- opcional, para una línea separadora -->
                 <div class="col-md-6">
                   <label class="form-label">Fecha de Pago</label>
-                  <input type="date" class="form-control" name="fecha_pago">
+                  <input type="date" class="form-control" name="fecha_pago" required>
                 </div>
               <div class="col-md-6">
                 <label class="form-label">Total Pago</label>
-                <input type="number" class="form-control" name="total_pago" >
+                <input type="number" class="form-control" name="total_pago" required >
               </div>
               <div class="col-md-6">
                 <label class="form-label">Forma de Pago</label>
-                <input type="text" class="form-control" name="forma_pago">
+                <input type="text" class="form-control" name="forma_pago" required>
               </div>
               <div class="col-md-6">
                 <label class="form-label">Reembolso</label>

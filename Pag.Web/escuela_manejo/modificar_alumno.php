@@ -29,8 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             TOTAL_PAGO = :total_pago,
             FORMA_PAGO = :forma_pago,
             REEMBOLSO = :reembolso,
-            USUARIO = :usuario,
-            DOMINIO = :dominio,
+            CORREO = :correo,
             FECHA_PAGO = :fecha_pago
         WHERE RFC_CLIENTE = :rfc_original";
 
@@ -53,8 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ':total_pago' => $_POST['total_pago'] ?? 0,
             ':forma_pago' => $_POST['forma_pago'] ?? null,
             ':reembolso' => $_POST['reembolso'] ?? 0,
-            ':usuario' => $_POST['usuario'] ?? null,
-            ':dominio' => $_POST['dominio'] ?? null,
+            ':correo' => $_POST['correo'] ?? null,
             ':rfc_original' => $_POST['rfc_original']
         ]);
 
