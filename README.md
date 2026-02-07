@@ -1,5 +1,12 @@
 <h1 align="center">START & GO</h1>   
-![Logo_rectangular](https://github.com/user-attachments/assets/fcbe6e20-069a-4bca-a630-80c5a54a9e36)
+
+<p align="center">
+  <img src="img/Logo_rectangular.png" width="300">
+</p>
+
+
+
+
 <p align="center">Escuela de manejo (ficticia)</p>
 
 
@@ -106,6 +113,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
