@@ -32,7 +32,7 @@ extension=mysqli
 extension=pdo_mysql
 ```
 > Estas extensiones son necesarias para la compatibilidad con MySQL.
----
+
 **Material de apoyo**
 https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 
@@ -41,7 +41,8 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 - PHP: Backend, conexión a base de datos, sesiones, controladores.  
 - JavaScript (JS): Comportamiento dinámico, validaciones y control de la interfaz.  
 - HTML: Estructura y contenido del sistema.  
-- CSS + Bootstrap: Diseño visual de la interfaz. 
+- CSS + Bootstrap: Diseño visual de la interfaz.
+- Chart.js: Implementación de gráficas dinámicas.
 - MySQL: Gestión de la base de datos.  
 - IIS (Internet Information Services): Servidor web sobre Windows.
 
@@ -51,7 +52,19 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 
 | Login | Inicio | Empleados | Agenda |
 |------|--------|-----------|---------|
-| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Login.png" width = "200">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Inicio.png" width = "200"> |<img src= "https://github.com/MichelIvette/Lugia-/blob/main/Images/Empleados.png" width = "200"> | <img src= "https://github.com/MichelIvette/Lugia-/blob/main/Images/Agenda.png" width= "200"> |
+| 
+<a href="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Login.png">
+<img src="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Login.png" width="200">
+</a> |
+<a href="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Inicio.png">
+<img src="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Inicio.png" width="200">
+</a> |
+<a href="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Empleados.png">
+<img src="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Empleados.png" width="200">
+</a> |
+<a href="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Agenda.png">
+<img src="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Agenda.png" width="200">
+</a> |
 
 | Form de Pagos | Reportes | Estado de Cuenta | Tema Oscuro |
 |--------|-------------------|--------------------|-------------|
@@ -81,7 +94,6 @@ User: recepcionista pass: recepcionista
  **Diagrama E-R del sistema:**  
 [Ver Diagrama E-R](https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/BasesDeDatos/Diagrama%20E-R.jpg)
 
----
 
 ## Funcionalidades Principales
 
@@ -97,7 +109,6 @@ User: recepcionista pass: recepcionista
 - Sistema de ayuda.
 -  Conexión a la base de datos: El sistema establece una conexión centralizada a la base de datos MySQL a través del archivo conexion.php, ubicado en el directorio principal del proyecto. Este archivo contiene los parámetros necesarios para autenticar la conexión con el servidor y es reutilizado por todos los módulos del sistema.  [Ver conexión.php](https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/conexion.php)
 
----
 
 ## Desarrolladores
 
@@ -110,7 +121,7 @@ User: recepcionista pass: recepcionista
 ## Documentación adicional y manuales
 [Repositorio en Google Drive](https://drive.google.com/drive/u/0/folders/1BnW4Urknopr131S7OAJq_zP76d1ex5sS)
 
-### Colaboradores de la Documentación
+### Colaboradores de la Documentación adicional y manuales
 
 - [@Ivette](https://github.com/MichelIvette)
 - [@Michelle](https://github.com/ItsMichh) 
@@ -130,6 +141,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
