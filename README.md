@@ -63,10 +63,10 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 
 Está plataforma va dirigido a dos usuarios finales: 
 
-**Administrador**
-- User: admin pass: admin
-**Recepcionista**
-- User: recepcionista pass: recepcionista 
+- **Administrador**
+User: admin pass: admin
+- **Recepcionista**
+User: recepcionista pass: recepcionista 
 
 
 ## Tablas de la Base de Datos
@@ -101,7 +101,13 @@ Está plataforma va dirigido a dos usuarios finales:
 
 ---
 
-## Autores
+## Desarrolladores
+
+- [@Monroy](https://github.com/ErickMonroy) 
+- [@Ivette](https://github.com/MichelIvette)  
+- [@Cesar](https://github.com/ZeroZX935) 
+
+## Colaboradores de la Documentación
 
 - [@Ivette](https://github.com/MichelIvette)
 - [@Michelle](https://github.com/ItsMichh) 
@@ -121,6 +127,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
