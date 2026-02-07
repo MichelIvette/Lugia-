@@ -7,7 +7,9 @@
 
 
 ## Descripción
-Es una plataforma web diseñada para una escuela de manejo. Su objetivo es gestionar de forma eficiente las operaciones administrativas de la escuela de manejo **START & GO**.
+**START & GO** es un sistema web diseñado para la centralización y automatización de los procesos administrativos de una escuela de manejo, con el objetivo de optimizar la operación y el control interno.
+
+La plataforma permite disminuir tareas manuales, mejorar la gestión de horarios y apoyar la toma de decisiones a través de reportes visuales y estados de cuenta automatizados.
 
 ---
 
@@ -131,6 +133,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
