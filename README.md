@@ -1,11 +1,8 @@
 <h1 align="center">START & GO</h1>   
 
 <p align="center">
-  <img src="https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/img/Logo_rectangular.jpg" width="120">
+  <img src="https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/img/Logo_rectangular.jpg" width="200">
 </p>
-
-
-
 
 <p align="center">Escuela de manejo (ficticia)</p>
 
@@ -50,6 +47,17 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 - IIS (Internet Information Services): Servidor web sobre Windows.
 
 ---
+
+## Interfaz del sistema
+
+| Login | Inicio | Empleados | Agenda |
+|------|--------|-----------|---------|
+| ![Login](assets/Login.png) | ![Inicio](assets/Inicio.png) | ![Empleados](assets/Empleados.png) | ![Alumnos](assets/Agenda.png) |
+
+| Agenda | Reportes de Cuenta | Reportes de Clases | Tema Oscuro |
+|--------|-------------------|--------------------|-------------|
+| ![Agenda](assets/agenda.png) | ![Reportes Cuenta](assets/reportes_cuenta.png) | ![Reportes Clases](assets/reportes_clases.png) | ![Tema Oscuro](assets/tema_oscuro.png) |
+
 ## Para ingresar al contenido de la plataforma
 
 Está plataforma va dirigido a dos usuarios finales: 
@@ -113,6 +121,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
