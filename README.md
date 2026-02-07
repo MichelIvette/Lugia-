@@ -98,6 +98,7 @@ User: recepcionista pass: recepcionista
 - Sistema de ayuda.
 -  Conexión a la base de datos: El sistema establece una conexión centralizada a la base de datos MySQL a través del archivo conexion.php, ubicado en el directorio principal del proyecto. Este archivo contiene los parámetros necesarios para autenticar la conexión con el servidor y es reutilizado por todos los módulos del sistema.  [Ver conexión.php](https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/conexion.php)
 
+--- 
 
 ## Desarrolladores
 
@@ -110,7 +111,7 @@ User: recepcionista pass: recepcionista
 ## Documentación adicional y manuales
 [Repositorio en Google Drive](https://drive.google.com/drive/u/0/folders/1BnW4Urknopr131S7OAJq_zP76d1ex5sS)
 
-### Colaboradores de la Documentación adicional y manuales
+### Colaboradores de la Documentación 
 
 - [@Ivette](https://github.com/MichelIvette)
 - [@Michelle](https://github.com/ItsMichh) 
@@ -130,6 +131,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
