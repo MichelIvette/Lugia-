@@ -1,6 +1,7 @@
-<h1 align="center">Lugia</h1>   
+<h1 align="center">START & GO</h1>   
+![Logo_rectangular](https://github.com/user-attachments/assets/fcbe6e20-069a-4bca-a630-80c5a54a9e36)
+<p align="center">Escuela de manejo (ficticia)</p>
 
-**START & GO**: una escuela de manejo.
 
 ## Descripción
 Es una plataforma web diseñada para una escuela de manejo. Su objetivo es gestionar de forma eficiente las operaciones administrativas de la escuela de manejo **START & GO**.
@@ -105,6 +106,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
