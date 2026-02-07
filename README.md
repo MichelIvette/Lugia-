@@ -3,7 +3,7 @@
   <img src="https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/img/Logo_rectangular.jpg" width="400">
 </p>
 
-<p align="center">Escuela de manejo (ficticia)</p>
+<p align="center"> Sistema de gestión para una escuela de manejo (ficticia)</p>
 
 
 ## Descripción
@@ -131,6 +131,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
