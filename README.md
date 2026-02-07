@@ -1,7 +1,6 @@
-<h1 align="center">START & GO</h1>   
 
 <p align="center">
-  <img src="https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/img/Logo_rectangular.jpg" width="300">
+  <img src="https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/img/Logo_rectangular.jpg" width="400">
 </p>
 
 <p align="center">Escuela de manejo (ficticia)</p>
@@ -52,8 +51,7 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 
 | Login | Inicio | Empleados | Agenda |
 |------|--------|-----------|---------|
-| ![Login](img/Login.png)
-| ![Inicio](assets/Inicio.png) | ![Empleados](assets/Empleados.png) | ![Alumnos](assets/Agenda.png) |
+| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Login.png" width = "150">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Inicio.png" width = "150"> | ![Empleados](https://github.com/MichelIvette/Lugia-/blob/main/Images/Empleados.png) | ![Alumnos](assets/Agenda.png) |
 
 | Agenda | Reportes de Cuenta | Reportes de Clases | Tema Oscuro |
 |--------|-------------------|--------------------|-------------|
@@ -124,6 +122,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
