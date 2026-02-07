@@ -53,9 +53,9 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 |------|--------|-----------|---------|
 | <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Login.png" width = "150">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Inicio.png" width = "150"> |<img src= "https://github.com/MichelIvette/Lugia-/blob/main/Images/Empleados.png" width = "150"> | <img src= "https://github.com/MichelIvette/Lugia-/blob/main/Images/Agenda.png" width= "150"> |
 
-| Agenda | Reportes de Cuenta | Reportes de Clases | Tema Oscuro |
+| Form de Pagos | Reportes | Estado de Cuenta | Tema Oscuro |
 |--------|-------------------|--------------------|-------------|
-| ![Agenda](assets/agenda.png) | ![Reportes Cuenta](assets/reportes_cuenta.png) | ![Reportes Clases](assets/reportes_clases.png) | ![Tema Oscuro](assets/tema_oscuro.png) |
+| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Pagos.png" width="150">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Gr%C3%A1ficas.png" width="150">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/PDF.png" width="150"> |<img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Tema.png" width="150">|
 
 
 
@@ -122,6 +122,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
