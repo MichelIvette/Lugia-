@@ -82,8 +82,6 @@ User: recepcionista pass: recepcionista
 [Ver Diagrama E-R](https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/BasesDeDatos/Diagrama%20E-R.jpg)
 
 ---
-## Documentación adicional y manuales
-[Repositorio en Google Drive](https://drive.google.com/drive/u/0/folders/1BnW4Urknopr131S7OAJq_zP76d1ex5sS)
 
 ## Funcionalidades Principales
 
@@ -107,7 +105,12 @@ User: recepcionista pass: recepcionista
 - [@Ivette](https://github.com/MichelIvette)  
 - [@Cesar](https://github.com/ZeroZX935) 
 
-## Colaboradores de la Documentación
+---
+
+## Documentación adicional y manuales
+[Repositorio en Google Drive](https://drive.google.com/drive/u/0/folders/1BnW4Urknopr131S7OAJq_zP76d1ex5sS)
+
+### Colaboradores de la Documentación
 
 - [@Ivette](https://github.com/MichelIvette)
 - [@Michelle](https://github.com/ItsMichh) 
@@ -127,6 +130,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
