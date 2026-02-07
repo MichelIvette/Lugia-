@@ -1,7 +1,7 @@
 <h1 align="center">START & GO</h1>   
 
 <p align="center">
-  <img src="img/Logo_rectangular.png" width="300">
+  <img src="https://github.com/MichelIvette/Lugia-/blob/main/Pag.Web/escuela_manejo/img/Logo_rectangular.jpg" width="80">
 </p>
 
 
@@ -113,6 +113,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
