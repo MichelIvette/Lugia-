@@ -53,9 +53,7 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 | Login | Inicio | Empleados | Agenda |
 |------|--------|-----------|---------|
 | 
-<a href="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Login.png">
-<img src="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Login.png" width="200">
-</a> |
+<a href="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Login.png" width="200"></a> |
 <a href="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Inicio.png">
 <img src="https://raw.githubusercontent.com/MichelIvette/Lugia-/main/Images/Inicio.png" width="200">
 </a> |
@@ -141,6 +139,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
