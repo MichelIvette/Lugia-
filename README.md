@@ -52,7 +52,7 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 
 | Login | Inicio | Empleados | Agenda |
 |------|--------|-----------|---------|
-| ![Login](assets/Login.png) | ![Inicio](assets/Inicio.png) | ![Empleados](assets/Empleados.png) | ![Alumnos](assets/Agenda.png) |
+| ![Login](https://github.com/MichelIvette/Lugia-/blob/main/Images/Login.png) | ![Inicio](assets/Inicio.png) | ![Empleados](assets/Empleados.png) | ![Alumnos](assets/Agenda.png) |
 
 | Agenda | Reportes de Cuenta | Reportes de Clases | Tema Oscuro |
 |--------|-------------------|--------------------|-------------|
@@ -121,6 +121,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
