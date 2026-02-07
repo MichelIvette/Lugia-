@@ -51,9 +51,9 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 
 | Login | Inicio | Empleados | Agenda |
 |------|--------|-----------|---------|
-| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Login.png" width = "150">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Inicio.png" width = "200"> |<img src= "https://github.com/MichelIvette/Lugia-/blob/main/Images/Empleados.png" width = "200"> | <img src= "https://github.com/MichelIvette/Lugia-/blob/main/Images/Agenda.png" width= "200"> |
+| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Login.png" width = "100">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Inicio.png" width = "200"> |<img src= "https://github.com/MichelIvette/Lugia-/blob/main/Images/Empleados.png" width = "200"> | <img src= "https://github.com/MichelIvette/Lugia-/blob/main/Images/Agenda.png" width= "200"> |
 
-| Form de Pagos | Reportes | Estado de Cuenta | Tema Oscuro/Sistema de ayuda|
+| Form de Pagos | Reportes | Estado de Cuenta | Tema Oscuro |
 |--------|-------------------|--------------------|-------------|
 |<img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Pagos.png" width="200">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Gr%C3%A1ficas.png" width="200">| <img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/PDF.png" width="200"> |<img src="https://github.com/MichelIvette/Lugia-/blob/main/Images/Sistema_ayuda.png" width="200">|
 
@@ -122,6 +122,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
