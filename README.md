@@ -68,9 +68,9 @@ https://youtu.be/gGcejiDVX5I?si=tGU56udGKA9jyJMU
 Está plataforma va dirigido a dos usuarios finales: 
 
 - **Administrador**
-User: admin pass: admin
+-> User: admin pass: admin
 - **Recepcionista**
-User: recepcionista pass: recepcionista 
+-> User: recepcionista pass: recepcionista 
 
 
 ## Tablas de la Base de Datos
@@ -133,6 +133,7 @@ En desarrollo activo
 
 
 Este proyecto es de uso educativo bajo los términos del **MIT License**.
+
 
 
 
